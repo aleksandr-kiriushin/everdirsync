@@ -1,4 +1,4 @@
-<img src="https://github.com/aleksandr-kiriushin/everdirsync/blob/main/assets/jenkins.svg" width="50" height="50">
+![](./assets/jenkins.svg)
 [![Build Status](https://ci.everalerta.com/buildStatus/icon?job=everdirsync)](https://ci.everalerta.com/job/everdirsync/)
 
 # EverDirSync
