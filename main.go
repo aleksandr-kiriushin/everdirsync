@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
 )
 
 func main() {
@@ -13,4 +14,11 @@ func main() {
 
 	fmt.Println("Source:", *source)
 	fmt.Println("Target:", *target)
+	fmt.Println()
+
+	err := listDir(*source)
+	if err != nil {
+		log.Fatalf("Error %v", err)
+	}
+
 }
