@@ -1,3 +1,4 @@
+![Alt text](jenkins.svg)<img src="./assets/jenkins.svg">
 [![Build Status](https://ci.everalerta.com/buildStatus/icon?job=everdirsync)](https://ci.everalerta.com/job/everdirsync/)
 
 # EverDirSync
