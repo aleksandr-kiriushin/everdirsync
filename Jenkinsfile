@@ -6,10 +6,25 @@ pipeline {
         }
     }
     stages {
+        stage('Build') {
+            steps {
+                sh 'go build'
+            }
+        }
         stage('Test') {
             steps {
-                sh 'go version'
                 sh 'go test'
+            }
+        }
+        stage ('Release') {
+            when {
+                buildingTag()
+            }
+            environment {
+                GITHUB_TOKEN = credentials('github-jenkins-releases')
+            }
+            steps {
+                sh 'curl -sL https://git.io/goreleaser | bash'
             }
         }
     }
